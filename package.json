@@ -1,14 +1,10 @@
 {
-  "name": "season24-api",
+  "name": "node-csv-generator",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
     "csv": "ts-node -r tsconfig-paths/register src/csv.ts",
     "git": "git add . && git commit -a -m $M",
-    "git.auto": "git add . && git commit -a -m 'auto commit'",
-    "deploy": "npm run git.auto && git push heroku master && heroku open"
+    "git.auto": "git add . && git commit -a -m 'auto commit'"
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
