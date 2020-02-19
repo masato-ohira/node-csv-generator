@@ -1,7 +1,4 @@
-import * as _ from 'lodash'
-import uuid from 'uuid'
 import fs from 'fs-extra'
-
 import sampleJson from './sample'
 
 const config = {
