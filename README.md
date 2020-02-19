@@ -1,28 +1,17 @@
-# season24-api
+# node-csv-generator
 
-## 起動方法
-
-```
-# install
-yarn -i
-
-# start
-yarn start
-```
+DB投入用のcsvを生成します
 
 ## 使い方
 
-http://localhost:3000/
+```bash
+# モジュールのインストール
+yarn -i
 
-| キー名 | 内容 | 備考 |
-| --- | --- | --- |
-| date | 基準日 | 指定がなければ今日の日付 |
-| season | 基準日が所属する期間を表示 | --- |
-| seasons | 基準日を元に二十四節気を取得 | --- |
+# csv生成
+yarn csv
+```
 
+## 出力データの変更
 
-http://localhost:3000/?date=2010-01-01
-
-基準日はqueryで指定可能
-
-
+`src/sample.ts`を編集します

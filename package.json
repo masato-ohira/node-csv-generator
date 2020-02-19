@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "csv": "ts-node -r tsconfig-paths/register src/csv.ts",
     "git": "git add . && git commit -a -m $M",
     "git.auto": "git add . && git commit -a -m 'auto commit'",
     "deploy": "npm run git.auto && git push heroku master && heroku open"
