@@ -1,0 +1,36 @@
+{
+  "name": "season24-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "git": "git add . && git commit -a -m $M",
+    "git.auto": "git add . && git commit -a -m 'auto commit'",
+    "deploy": "npm run git.auto && git push heroku master && heroku open"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "lodash": "^4.17.15",
+    "ts-node": "^8.5.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.2",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/fs-extra": "^8.1.0",
+    "@types/lodash": "^4.14.146",
+    "@types/node": "^12.12.7",
+    "@types/uuid": "^3.4.7",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-node": ">=8.0.1",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0"
+  }
+}
