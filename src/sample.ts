@@ -3,11 +3,11 @@ import uuid from 'uuid'
 
 const sampleJson = () => {
   try {
-    let sanmpeIDS = _.times(100, () => {
+    let sampleIDS = _.times(100, () => {
       return _.random(1, 60000)
     })
     const newData = []
-    _.map(sanmpeIDS, id => {
+    _.map(sampleIDS, id => {
       let data = {
         'id': 'NULL',
         'group_id': id,
